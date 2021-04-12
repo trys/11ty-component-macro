@@ -1,0 +1,18 @@
+---
+title: "Global Component Macro"
+---
+
+{%- extends "layouts/page.njk" -%}
+
+{%- block content -%}
+
+  {{ component('button', {
+    primary: 'Hello'
+  }) }}
+
+  {{ component('button', {
+    primary: 'Hello',
+    secondary: 'World'
+  }) }}
+
+{%- endblock -%}
